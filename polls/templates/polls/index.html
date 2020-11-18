@@ -1,0 +1,15 @@
+{% extends 'polls/base.html' %}
+
+{% block content %}
+    <h1> This is Template </h1>
+    <p>I'm a <b>{{name}}</b></p>
+<h2>My Girlfriend is :</h2>
+<ul>
+    {% for ny in nyc %}
+        {% if ny == 'Hảo'%}
+            <li>{{ny}}</li>
+        {% endif %}
+    {% endfor %}
+</ul>
+
+{% endblock %}
